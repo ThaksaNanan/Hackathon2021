@@ -39,16 +39,11 @@ const Homepage = (props) => {
                                 Color='red'
                                 Title='+'
                                 onPress={() => {
-
+                                    
                                     // React hooks <------------
                                     setNumber(numberState + 1)
-
-
                                     // Redux <------------
                                     dispatch(Action.setNumberIncrement(1))
-
-
-
 
                                 }}
                                 setStyle
@@ -61,14 +56,8 @@ const Homepage = (props) => {
 
                                     // React hooks <------------
                                     setNumber(numberState - 1)
-
-
                                     // Redux <------------
                                     dispatch(Action.setNumberDecrement(1))
-
-
-
-
                                 }}
                             />
                         </View>
@@ -94,6 +83,16 @@ const Homepage = (props) => {
                             navigation.navigate('Secondpage')
                         }
                     />
+
+                        <View
+                        style={{
+                            backgroundColor:'red',
+                            width:100,
+                            height:100,
+                            borderRadius:50
+                        }}
+                        ></View>
+
                 </View>
             </ScrollView>
         </View>
